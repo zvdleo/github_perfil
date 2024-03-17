@@ -11,7 +11,38 @@
     margin: 0 auto;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.input {
+    padding: 4px 4px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.button {
+    font-weight: bold;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+    background-color: var(--corPrincipal);
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--corSecundariaBotao); /* Alterando para uma cor mais forte quando o mouse estiver sobre o botão */
+}
+
 :root {
     --corPrincipal: #90ffec;
+    --corSecundariaBotao:  #4edce8;
     --corSecundaria: #111;
 }

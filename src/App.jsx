@@ -11,7 +11,11 @@ function App () {
 
   return (
     <>
-      <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
+      <header className="header">
+        <h1 className="title">Perfil do GitHub</h1>
+        <input className="input" type="text" onBlur={(e) => setNomeUsuario(e.target.value)} placeholder="Usuário" />
+        <button className="button" onClick={() => setFormularioEstaVisivel(formularioEstaVisivel)} type="button">Buscar</button>
+      </header>
 
       {nomeUsuario.length > 4 && (
         <>
@@ -24,7 +28,7 @@ function App () {
         <Formulario />
       )}
 
-      <button onClick={() => setFormularioEstaVisivel(!formularioEstaVisivel)} type="button">toggle form</button> */}
+       */}
     </>
   )
 }
